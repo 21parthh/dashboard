@@ -8,14 +8,12 @@ import {
   IconUser,
   IconSettings,
   IconLogout,
-  IconArrowAutofitLeft,
   IconArrowBarLeft,
 } from '@tabler/icons-react';
-import styled from 'styled-components'; // Import styled-components
 import classes from './DoubleNavbar.module.css';
 
 export function DoubleNavbar() {
-  const [active, setActive] = useState('Releases');
+  const [active, setActive] = useState('Dashboard'); // Set default active component to 'Dashboard'
   const [activeLink, setActiveLink] = useState('Settings');
   const [collapsed, setCollapsed] = useState(false);
 
