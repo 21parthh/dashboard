@@ -1,0 +1,29 @@
+.table{
+    margin-top: 60px;
+    border: none;
+}
+/* TableUI.module.css */
+.table {
+  width: 100%;
+}
+
+.icon {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.leftAlign {
+  text-align: left;
+}
+Table.Tr{
+    border: none;
+}
+.tableRowHover {
+    transition: transform 0.3s ease;
+  }
+  
+  .tableRowHover:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transform: scale(1.05); /* Zoom effect */
+  }

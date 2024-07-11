@@ -1,0 +1,123 @@
+/* DoubleNavbar.module.css */
+
+.navbar {
+  background-color: #0A1F31;
+  height: 100vh;
+  width: 300px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease; /* Example transition for smooth collapse */
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.aside {
+  width: 60px; /* Default width */
+  background-color: #0A1F31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: width 0.3s ease; /* Example transition for smooth collapse */
+}
+
+.collapsed .aside {
+  width: 0; /* Adjust width as needed when collapsed */
+}
+
+.main {
+  flex: 1;
+  background-color: #0A1F31;
+  transition: margin-left 0.3s ease; /* Example transition for smooth collapse */
+}
+
+.collapsed .main {
+  margin-left: 60px; /* Adjust margin as needed when collapsed */
+}
+
+.mainLink {
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  transition: width 0.3s ease; /* Example transition for smooth collapse */
+}
+
+.collapsed .mainLink {
+  width: 44px; /* Adjust width as needed when collapsed */
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: var(--mantine-spacing-xl);
+  background-color: #0A1F31;
+  padding: var(--mantine-spacing-md);
+  padding-top: 18px;
+  height: 60px;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  padding-top: var(--mantine-spacing-md);
+  margin-bottom: var(--mantine-spacing-xl);
+}
+
+.link {
+  display: flex;
+  
+  align-items: center;
+  text-decoration: none;
+  border-top-right-radius: var(--mantine-radius-md);
+  border-bottom-right-radius: var(--mantine-radius-md);
+  color: grey;
+  padding: 0 var(--mantine-spacing-md);
+  font-size: var(--mantine-font-size-sm);
+  margin-right: var(--mantine-spacing-md);
+  font-weight: 500;
+  height: 60px; /* Adjust as needed */
+  line-height: 60px; /* Adjust as needed */
+  transition: width 0.3s ease; /* Example transition for smooth collapse */
+}
+
+.collapsed .link {
+  width: 0; /* Adjust width as needed when collapsed */
+  overflow: hidden;
+  padding: 0;
+}
+
+.link:hover {
+  background-color: lightgreen;
+  color: white;
+}
+
+.link[data-active],
+.link[data-active]:hover {
+  border-left-color: var(--mantine-color-blue-filled);
+  background-color: lightgreen;
+  color: white;
+}
+
+.bottomLinks {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+}
+
+.linkCollapsed {
+  width: 0; /* Ensure links are hidden when collapsed */
+  overflow: hidden;
+  padding: 0;
+}
